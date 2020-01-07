@@ -88,10 +88,12 @@
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
-      console.table(data.reduce((memo, item) => {
-        memo[item] ? memo[item]++ : memo[item] = 1
-        return memo
-      }, {}));
+      console.table(
+        data.reduce((memo, item) => {
+          memo[item] ? memo[item]++ : memo[item] = 1
+          return memo
+        }, {})
+      );
     </script>
   </body>
 
